@@ -1,21 +1,91 @@
 {
-  "cpu" : [],
+  "cpu" : [
+    {
+      "name"              : "XMRig",
+      "version"           : "16.6.1",
+      "websiteLink"       : "https://xmrig.com",
+      "downloadLink"      : "https://xmrig.com/download",
+      "iconLink"          : "https://xmrig.com/favicon.ico",
+      "supportedAlgos"    : [
+        "gr","rx/graft","cn/upx2","argon2/chukwav2","cn/ccx","kawpow","rx/keva","astrobwt","cn-pico/tlo","rx/sfx",
+        "rx/arq","rx/0","argon2/chukwa","argon2/ninja","rx/wow","cn/fast","cn/rwz","cn/zls","cn/double","cn/r","cn-pico",
+        "cn/half","cn/2","cn/xao","cn/rto","cn-heavy/tube","cn-heavy/xhv","cn-heavy/0","cn/1","cn-lite/1","cn-lite/0","cn/0"
+      ],
+      "command"           : {
+        "windows"           : "xmrig -t {THREADS} -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}",
+        "linux"             : "./xmrig -t {THREADS} -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}"
+      }
+    },
+    {
+      "name"              : "cpuminer-multi",
+      "version"           : "1.3.1",
+      "websiteLink"       : "https://github.com/tpruvot/cpuminer-multi",
+      "downloadLink"      : "https://github.com/tpruvot/cpuminer-multi/releases/tag/v1.3.1-multi",
+      "iconLink"          : "https://raw.githubusercontent.com/zypher420/miners-list/main/icons/cpu.svg",
+      "supportedAlgos"    : [
+        "axiom", "blake", "blakecoin", "blake2s", "bmw", "c11/flax", "cryptolight", "cryptonight", "decred",
+        "dmd-gr", "drop", "fresh", "groestl", "heavy", "keccak", "luffa", "lyra2re", "lyra2rev2", "myr-gr", 
+        "neoscrypt", "nist5", "pluck", "pentablake", "quark", "qubit", "scrypt", "scrypt:N", "scrypt-jane:N", "shavite3", 
+        "sha256d", "sia", "sib", "skein", "skein2", "s3", "timetravel", "vanilla", "x11evo", "x11", "x13", "x14", "x15", 
+        "x17", "xevan", "yescrypt", "zr5"
+      ],
+      "command"           : {
+        "windows"           : "xmrig -t {THREADS} -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}",
+        "linux"             : "./xmrig -t {THREADS} -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}"
+      }
+    }
+  ],
   "gpu" : [
     {
       "name"              : "T-Rex",
-      "version"           : "19.04",
+      "version"           : "00.19.04",
       "websiteLink"       : "https://t-rex.com",
       "downloadLink"      : "https://t-rex.com/downloads",
       "iconLink"          : "https://t-rex.com/favicon.ico",
       "supportedAlgos"    : [
-        "x16rv2"
+        "astralhash","balloon","bcd","bitcore","c11","dedal","etchash","ethash","geek","hmq1725",
+        "honeycomb","jeonghash","kawpow","lyra2z","megabtx","megamec","mtp","mtp-tcr","octopus","padihash",
+        "pawelhash","phi","polytimos","progpow","progpow-veil","progpow-veriblock","progpowz","sha256q","sha256t",
+        "skunk","sonoa","tensority","timetravel","tribus","x11r","x16r","x16rt","x16rv2","x16s","x17","x21s","x22i",
+        "x25x","x33"
       ],
       "command"           : {
-        "windows"           : "t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERKEY}",
-        "linux"             : "./t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERKEY}"
+        "windows"           : "t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}",
+        "linux"             : "./t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}"
+      }
+    },
+    {
+      "name"              : "T-Rex",
+      "version"           : "00.25.02",
+      "websiteLink"       : "https://t-rex.com",
+      "downloadLink"      : "https://t-rex.com/downloads",
+      "iconLink"          : "https://t-rex.com/favicon.ico",
+      "supportedAlgos"    : [
+        "autolykos2","blake3","etchash","ethash","firopow","kawpow","mtp","mtp-tcr","multi","octopus","progpow",
+        "progpow-veil","progpow-veriblock","progpowz","tensority"
+      ],
+      "command"           : {
+        "windows"           : "t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}",
+        "linux"             : "./t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERPASS}"
+      }
+    },
+    {
+      "name"              : "WildRig-Multi",
+      "version"           : "0.31.3",
+      "websiteLink"       : "https://github.com/andru-kun/wildrig-multi",
+      "downloadLink"      : "https://github.com/andru-kun/wildrig-multi/releases/tag/0.31.3",
+      "iconLink"          : "https://raw.githubusercontent.com/zypher420/miners-list/main/icons/gpu.svg",
+      "supportedAlgos"    : [
+        "0x10","aergo","anime","bcd","bitcore","blake2b-btcc","blake2b-glt","bmw512","c11","dedal","exosis","geek","ghostrider","glt-astralhash",
+        "glt-globalhash","glt-hex","glt-jeonghash","glt-padihash","glt-pawelhash","heavyhash","hex","hmq1725","honeycomb","kawpow","lyra2tdc",
+        "lyra2v3","lyra2vc0ban","megabtx","megamec","minotaur","mtp","mtp-tcr","phi","phi5","polytimos","progpow-ethercore","progpow-sero",
+        "progpowz","renesis","sha256q","sha256t","sha256csm","skein2","skunkhash","sonoa","timetravel","timetravel10","tribus","vprogpow",
+        "wildkeccak","x11k","x16r","x16rv2","x16rt","x16s","x17","x17r","x18","x20r","x21s","x22","x22i","x25x","x33","xevan"
+      ],
+      "command"           : {
+        "windows"           : "wildrig --print-full --algo {ALGO} --url {SERVER} --user {ADDRESS}.{WORKERNAME} --pass {WORKERPASS}",
+        "linux"             : "./wildrig --print-full --algo {ALGO} --url {SERVER} --user {ADDRESS}.{WORKERNAME} --pass {WORKERPASS}"
       }
     }
-  ],
-  "asic": [],
-  "fpga": []
+  ]
 }
