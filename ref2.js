@@ -1,3 +1,5 @@
+// https://dev.w3.org/SVG/modules/ref/master/ref2.js
+
 var svgns = "http://www.w3.org/2000/svg";
 var xlinkns = "http://www.w3.org/1999/xlink";
  
