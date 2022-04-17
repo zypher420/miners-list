@@ -1,0 +1,21 @@
+{
+  "cpu" : [],
+  "gpu" : [
+    {
+      "name"              : "T-Rex",
+      "version"           : "19.04",
+      "websiteLink"       : "https://t-rex.com",
+      "downloadLink"      : "https://t-rex.com/downloads",
+      "iconLink"          : "https://t-rex.com/favicon.ico",
+      "supportedAlgos"    : [
+        "x16rv2"
+      ],
+      "command"           : {
+        "windows"           : "t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERKEY}",
+        "linux"             : "./t-rex -a {ALGO} -o {SERVER} -u {ADDRESS}.{WORKERNAME} -p {WORKERKEY}"
+      }
+    }
+  ],
+  "asic": [],
+  "fpga": []
+}
